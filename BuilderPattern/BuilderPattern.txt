@@ -1,0 +1,162 @@
+/* ------------------------------------------------------------------------------------ 
+                    HTMLElement Header (HtmlElement.hxx)
+------------------------------------------------------------------------------------ */
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+class HtmlElement 
+{
+private:
+	string name, text;
+	vector<HtmlElement> elements;
+	const size_t indent_size = 2;
+
+public:
+	HtmlElement() = default;
+
+	HtmlElement(const string& name, const string& text);
+
+	void SetName(string& name);
+
+	void Add_Elements(HtmlElement& element);
+
+	string str(int indent = 0) const;
+};
+
+
+/* ------------------------------------------------------------------------------------ 
+                   HTMLElement Implementation (HtmlElement.cxx)
+------------------------------------------------------------------------------------ */
+
+#include "HtmlElement.hxx"
+#include <sstream>
+
+// ---------------------------------------------------------------------------------------
+HtmlElement::HtmlElement(const string& name, const string& text) : name(name), text(text)
+{
+
+}
+
+// ---------------------------------------------------------------------------------------
+void HtmlElement::SetName(string& name)
+{
+	this->name = name;
+}
+
+// ---------------------------------------------------------------------------------------
+void HtmlElement::Add_Elements(HtmlElement& element)
+{
+	elements.emplace_back(element);
+}
+
+// ---------------------------------------------------------------------------------------
+string HtmlElement::str(int indent) const 
+{
+	ostringstream oss;
+
+	string i(indent_size * indent, ' ');
+	oss << i << "<" << name << ">" << endl;
+
+	if (!text.empty())
+		oss << string(indent_size * (indent + 1), ' ') << text << endl;
+
+	for (const auto& e : elements)
+		oss << e.str(indent + 1);
+
+	oss << i << "<\\" << name << ">" << endl;
+	return oss.str();
+}
+
+
+
+/* ------------------------------------------------------------------------------------ 
+                    HTMLBuilder Header (HTMLBuilder.hxx)
+------------------------------------------------------------------------------------ */
+
+#include "HtmlElement.hxx"
+
+class HtmlBuilder
+{
+private:
+	HtmlElement root;
+
+public:
+	HtmlBuilder(string root_name);
+
+	void Add_Child(string child_name, string child_text);
+
+	string str() const;
+};
+
+
+/* ------------------------------------------------------------------------------------ 
+                   HTMLBuilder Implementation (HTMLBuilder.cxx)
+------------------------------------------------------------------------------------ */
+
+#include "HtmlBuilder.hxx"
+
+// ---------------------------------------------------------------------------------------
+HtmlBuilder::HtmlBuilder(string root_name)
+{
+	root.SetName(root_name);
+}
+
+// ---------------------------------------------------------------------------------------
+void HtmlBuilder::Add_Child(string child_name, string child_text)
+{
+	HtmlElement e{ child_name, child_text };
+	root.Add_Elements(e);
+}
+
+// ---------------------------------------------------------------------------------------
+string HtmlBuilder::str() const 
+{
+	return root.str();
+}
+
+
+
+/* ------------------------------------------------------------------------------------
+                             Main CPP File (Source.cpp)
+------------------------------------------------------------------------------------ */
+
+#include <iostream>
+#include "HtmlBuilder.hxx"
+
+using namespace std;
+
+int main()
+{
+	HtmlBuilder ul{ "ul" };
+	ul.Add_Child("li", "BMW");
+	ul.Add_Child("li", "Maruti 800");
+	ul.Add_Child("li", "Honda-City");
+	cout << ul.str() << endl;
+}
+
+
+/*
+
+Output
+
+<ul>
+  <li>
+    BMW
+  <\li>
+  <li>
+    Maruti 800
+  <\li>
+  <li>
+    Honda-City
+  <\li>
+<\ul>
+
+*/
+
+
+
+
