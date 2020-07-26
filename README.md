@@ -1,3 +1,5 @@
+[[view on web]](https://shahpranav1094-courses.github.io/DesignPatterns/)
+
 # DesignPatterns
 ## C++ Design Patterns
 
