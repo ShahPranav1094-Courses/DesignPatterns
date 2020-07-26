@@ -13,4 +13,4 @@
     - Prototype Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/PrototypePattern/PrototypePatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/PrototypePattern/PrototypePattern.jpg)
 
 2. **Behavioral**
-    - Observer Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/ObserverPattern/ObserverationPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/ObserverPattern/ObserverPattern.jpg)
+	- Observer Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/ObserverPattern/ObserverationPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/ObserverPattern/ObserverPattern.jpg)
