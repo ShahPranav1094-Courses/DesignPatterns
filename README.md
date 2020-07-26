@@ -9,3 +9,4 @@
     - Abstract Factory Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/AbstractFactoryPattern/AbstractFactoryC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/AbstractFactoryPattern/AbstractFactory.jpg)
     - Singleton Pattern
         - Singleton Basic Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/SingletonPattern/SingletonPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/SingletonPattern/Singleton.jpg)
+        - Meyer's Singleton Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/SingletonPattern/Meyer'sSingletonPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/SingletonPattern/Meyer'sSingletonPattern.jpg)
