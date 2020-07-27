@@ -15,3 +15,6 @@
 2. **Behavioral**
 	- Observer Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/ObserverPattern/ObserverationPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/ObserverPattern/ObserverPattern.jpg)
 	- Strategy Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/StrategyPattern/StrategyPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/StrategyPattern/StrategyPattern.jpg)
+	
+3. **Structural**
+	- Decorator Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/DecoratorPattern/DecoratorPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/DecoratorPattern/DecoratorPattern.jpg)
