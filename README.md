@@ -18,4 +18,4 @@
 	
 3. **Structural**
 	- Decorator Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/DecoratorPattern/DecoratorPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/DecoratorPattern/DecoratorPattern.jpg)
-	- Adapter Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/AdapterPattern/AdapterPatternC%2B%2B.cpp) [img](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/AdapterPattern/AdapterPattern.jpg)
+	- Adapter Pattern  [[code]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/AdapterPattern/AdapterPatternC%2B%2B.cpp) [[img]](https://github.com/ShahPranav1094-Courses/DesignPatterns/blob/master/AdapterPattern/AdapterPattern.jpg)
